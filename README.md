@@ -40,9 +40,9 @@ Este proyecto es una aplicación web simple hecha con **Flask** que permite a lo
 📝 Usa la clave secreta que encuentras en tu Dashboard de Stripe.
 
 ## Ejecución
- *Inicia la aplicación localmente con:*
+ *Inicia la aplicación localmente con:* 
   python app.py
- *Luego abre tu navegador y visita:*
+ *Luego abre tu navegador y visita:* 
   http://127.0.0.1:4242/
 
 ## 📁 Estructura del proyecto
