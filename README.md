@@ -28,14 +28,14 @@ Este proyecto es una aplicación web simple hecha con **Flask** que permite a lo
 2. **Crea y activa un entorno virtual (opcional pero recomendado):**
     python -m venv venv
     
-    En Windows
+    En Windows  
     venv\Scripts\activate
     
-    En macOS/Linux
+    En macOS/Linux  
     source venv/bin/activate
-3. **Instala las dependencias:**
+4. **Instala las dependencias:**
    pip install -r requirements.txt
-4. **Crea un archivo .env en la raíz del proyecto con tu clave secreta de Stripe:**
+5. **Crea un archivo .env en la raíz del proyecto con tu clave secreta de Stripe:**
    STRIPE_SECRET_KEY=sk_test_tu_clave_aqui
 📝 Usa la clave secreta que encuentras en tu Dashboard de Stripe.
 
