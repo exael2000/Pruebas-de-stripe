@@ -32,11 +32,11 @@ Este proyecto es una aplicación web simple hecha con **Flask** que permite a lo
     venv\Scripts\activate
     
     En macOS/Linux  
-    source venv/bin/activate
-4. **Instala las dependencias:**
-   pip install -r requirements.txt
-5. **Crea un archivo .env en la raíz del proyecto con tu clave secreta de Stripe:**
-   STRIPE_SECRET_KEY=sk_test_tu_clave_aqui
+    source venv/bin/activate 
+4. **Instala las dependencias:** 
+   pip install -r requirements.txt 
+5. **Crea un archivo .env en la raíz del proyecto con tu clave secreta de Stripe:** 
+   STRIPE_SECRET_KEY=sk_test_tu_clave_aqui 
 📝 Usa la clave secreta que encuentras en tu Dashboard de Stripe.
 
 ## Ejecución
