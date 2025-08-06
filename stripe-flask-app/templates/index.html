@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="es">
+<!-- Elemento raíz del documento. El atributo lang="es" indica idioma español -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Codificación de caracteres en UTF-8 -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Hace que el sitio sea responsive en dispositivos móviles -->
+
+  <title>Tienda</title>
+  <!-- Título que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+  <h1>Tienda simple</h1>
+  <!-- Encabezado principal de la página -->
+
+  <!-- Formulario que se envía al servidor para crear una sesión de Stripe -->
+  <form action="/create-checkout-session" method="POST" id="payment-form">
+    
+    <!-- Selector de producto -->
+    <label for="producto">Selecciona un producto:</label>
+    <select name="producto_id" id="producto">
+      {% for producto in productos %}
+        <!-- Jinja: itera sobre los productos y muestra cada uno como opción -->
+        <option value="{{ producto.id }}" data-precio="{{ producto.precio }}">
+          {{ producto.nombre }} - ${{ "%.2f"|format(producto.precio / 100) }}
+        </option>
+      {% endfor %}
+    </select>
+
+    <br /><br />
+
+    <!-- Campo para elegir la cantidad -->
+    <label for="cantidad">Cantidad:</label>
+    <input
+      type="number"
+      id="cantidad"
+      name="cantidad"
+      value="1"
+      min="1"
+      max="10"
+      required
+    />
+
+    <br /><br />
+
+    <!-- Sección que muestra el total dinámico -->
+    <p>Total a pagar: $<span id="total">0.00</span></p>
+
+    <!-- Bot
