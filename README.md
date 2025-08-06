@@ -24,7 +24,7 @@ Este proyecto es una aplicación web simple hecha con Flask que permite a los us
 
 ## Instalación
 
-1. Clona este repositorio:
+Clona este repositorio:
 Crea y activa un entorno virtual (opcional pero recomendado):
 bash
 Copiar código
